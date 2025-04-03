@@ -1,6 +1,5 @@
 let maxFrutas = 0, maxCaldas = 0, maxComplementos = 0, totalExtras = 0, totalPreco = 0, precoCopo = 0;
 const tamanho = JSON.parse(localStorage.getItem("tamanhoCopo"));
-let numeroLoja = CONFIG.WHATSAPP_NUMERO;
 
         function carregarTamanho() {
             const tamanho = JSON.parse(localStorage.getItem("tamanhoCopo"));

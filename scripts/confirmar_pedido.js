@@ -2,7 +2,6 @@
 
         // Carregar os dados do pedido armazenados no localStorage
         let pedido = JSON.parse(localStorage.getItem("pedido")) || {}; // Garante que sempre tem um objeto
-
         let frutas = pedido.frutas || [];
         let complementos = pedido.complementos || [];
         let caldas = pedido.caldas || [];
