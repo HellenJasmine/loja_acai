@@ -1,0 +1,67 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4B0145;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    background: #E8A02E;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1 {
+    color: #fff;
+}
+.section {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.options label {
+    display: block;
+    background: white;
+    color: #4B0145;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + label {
+    background: #72C047;
+    color: white;
+}
+.btn-confirm {
+    background: #014b0a;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-confirm:hover {
+    background: #17b735;
+}
+
+.btn-extra{
+    background: #036f10;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}

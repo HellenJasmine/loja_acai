@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --roxo-escuro:#4B0145;
+    --verde-claro: #72C047;
+    --branco: #FFFFFF;
+    --amarelo-dourado: #E8A02E;
+    --bege-folha: #E7E3C5;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f1f1f1;
+}
+
+.app-bar{
+    width: 100%;
+    height: 60px;
+    background-color: var(--roxo-escuro);
+    padding: 10px;
+    box-shadow: 5px 0px 20px rgba(153, 13, 153, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:var(--amarelo-dourado);
+    font-size:28px;
+}
+
+.app-logo{
+    height: 100%;
+    flex: 2;
+    text-align: center;
+}
+
+.app-logo img{
+    height: 100%;
+    max-width: 150px;
+   
+}
+
+
+
+
+
+main{
+    padding: 20px;
+}
+
+main h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--roxo-escuro);
+    text-align: center;
+}
+.itens-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.item-card{
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    color: var(--roxo-escuro);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-card .item-image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    object-fit: cover;
+}
+
+.item-card .card-content{
+    padding: 0px;
+    text-align: center;
+}
+
+.item-card .card-content h2{
+    font-size: 1.2em;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.item-card .card-content .item-price{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom:0px;
+    color: var(--verde-claro);
+}
+
+.item-card .item-option {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.option-details{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--amarelo-dourado);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 10;
+}
+
+.option-details:hover {
+    background-color: #c58624;
+}

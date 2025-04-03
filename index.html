@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supremo Açaí - Monte seu Pedido</title>
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="app-bar">
+        <i class="bi bi-info-circle"></i>
+        <div class="app-logo">
+            <img src="./images/logo.jpeg" alt="Supremo Açai logo-Marca">
+        </div>
+        <i class="bi bi-cart3"></i>
+    </header>
+    
+    <main class="home-main">
+        <h1>Monte seu Açai</h1>
+
+        <section class="itens-list">
+
+            <div class="item-card">
+                <img class="item-image" src="./images/item.jpg" alt="Açaí 300ml">
+                <div class="card-content">
+                    <h2>Copo 300 ML</h2>
+                    <p class="item-price">R$ 15,00</p>
+                </div>
+                <div class="item-option">
+                    <a href="./item_details.html" class="option-details" onclick="selecionarTamanho(300, 1, 1, 2, 15)">
+                        Ver detalhes
+                    </a>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img class="item-image" src="./images/item.jpg" alt="Açaí 400ml">
+                <div class="card-content">
+                    <h2>Copo 400 ML</h2>
+                    <p class="item-price">R$ 18,00</p>
+                </div>
+                <div class="item-option">
+                    <a href="./item_details.html" class="option-details" onclick="selecionarTamanho(400, 1, 2, 3, 18)">
+                        Ver detalhes
+                    </a>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img class="item-image" src="./images/item.jpg" alt="Açaí 500ml">
+                <div class="card-content">
+                    <h2>Copo 500 ML</h2>
+                    <p class="item-price">R$ 21,00</p>
+                </div>
+                <div class="item-option">
+                    <a href="./item_details.html" class="option-details" onclick="selecionarTamanho(500, 2, 2, 3, 21)">
+                        Ver detalhes
+                    </a>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img class="item-image" src="./images/item.jpg" alt="Açaí 700ml">
+                <div class="card-content">
+                    <h2>Copo 700 ML</h2>
+                    <p class="item-price">R$ 35,00</p>
+                </div>
+                <div class="item-option">
+                    <a href="./item_details.html" class="option-details" onclick="selecionarTamanho(700, 3, 3, 5,35)">
+                        Ver detalhes
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function selecionarTamanho(size, frutas, caldas, complementos, preco) {
+            let tamanho = {
+                copo: size,
+                maxFrutas: frutas,
+                maxCaldas: caldas,
+                maxComplementos: complementos,
+                preco: preco
+            };
+
+            localStorage.setItem("tamanhoCopo", JSON.stringify(tamanho));
+        }
+    </script>
+
+</body>
+</html>

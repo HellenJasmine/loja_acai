@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte seu Açaí</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="style_item_details.css">
+
+</head>
+<body>
+    <h1>Monte seu Açaí</h1>
+    <div class="container">
+        <div class="section">
+            <h2>Escolha suas Frutas</h2>
+            <div class="options">
+                <input type="checkbox" id="banana"><label for="banana">Banana</label>
+                <input type="checkbox" id="uva"><label for="uva">Uva</label>
+                <input type="checkbox" id="abacaxi"><label for="abacaxi">Abacaxi</label>
+                <input type="checkbox" id="morango"><label for="morango">Morango</label>
+                <input type="checkbox" id="kiwi"><label for="kiwi">Kiwi</label>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Escolha suas Caldas</h2>
+            <div class="options">
+                <input type="checkbox" id="chocolate"><label for="chocolate">Chocolate</label>
+                <input type="checkbox" id="morango-c"><label for="morango-c">Morango</label>
+                <input type="checkbox" id="kiwi-c"><label for="kiwi-c">Kiwi</label>
+                <input type="checkbox" id="maracuja"><label for="maracuja">Maracujá</label>
+                <input type="checkbox" id="doce-leite"><label for="doce-leite">Doce de Leite</label>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Escolha seus Complementos</h2>
+            <div class="options">
+                <input type="checkbox" id="leite-po"><label for="leite-po">Leite em Pó</label>
+                <input type="checkbox" id="granola"><label for="granola">Granola</label>
+                <input type="checkbox" id="pacoca"><label for="pacoca">Paçoca</label>
+                <input type="checkbox" id="chocobool"><label for="chocobool">Chocobool</label>
+                <input type="checkbox" id="tapioca"><label for="tapioca">Flocos de Tapioca</label>
+                <input type="checkbox" id="amendoim"><label for="amendoim">Amendoim</label>
+                <input type="checkbox" id="disquete"><label for="disquete">Disquete</label>
+                <input type="checkbox" id="cereal"><label for="cereal">Cereal</label>
+            </div>
+        </div>
+        <button class="btn-confirm" onclick="confirmSelection()">Confirmar Pedido</button>
+    </div>
+
+    <script>
+        function confirmSelection() {
+            let selectedItems = [];
+            document.querySelectorAll('input[type="checkbox"]:checked').forEach((item) => {
+                selectedItems.push(item.nextElementSibling.innerText);
+            });
+            alert("Você escolheu: " + selectedItems.join(", "));
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte seu Açaí</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="./styles/style_item_details.css">
+</head>
+<body>
+    <h1>Monte seu Açaí</h1>
+
+    <div class="container">
+        <h2 id="titulo-tamanho">Escolha o Tamanho</h2>
+
+        <div class="section">
+            <h2>Escolha suas Frutas</h2>
+            <div class="options" id="frutas">
+                <input type="checkbox" id="banana"  class="fruta"><label for="banana">Banana</label>
+                <input type="checkbox" id="uva" class="fruta"><label for="uva">Uva</label>
+                <input type="checkbox" id="abacaxi" class="fruta"><label for="abacaxi">Abacaxi</label>
+                <input type="checkbox" id="morango" class="fruta"><label for="morango">Morango</label>
+                <input type="checkbox" id="kiwi" class="fruta"><label for="kiwi">Kiwi</label>
+            </div>
+            <button class="btn-extra" onclick="addExtra('fruta')">Adicionar Fruta R$3,00</button>
+        </div>
+
+        
+        <div class="section">
+            <h2>Escolha seus Complementos</h2>
+            <div class="options" id="complementos">
+                <input type="checkbox" id="leite-po" class="complemento"><label for="leite-po">Leite em Pó</label>
+                <input type="checkbox" id="granola" class="complemento"><label for="granola">Granola</label>
+                <input type="checkbox" id="pacoca" class="complemento"><label for="pacoca">Paçoca</label>
+                <input type="checkbox" id="chocobool" class="complemento"><label for="chocobool">Chocobool</label>
+                <input type="checkbox" id="tapioca" class="complemento"><label for="tapioca">Flocos de Tapioca</label>
+                <input type="checkbox" id="amendoim" class="complemento"><label for="amendoim">Amendoim</label>
+                <input type="checkbox" id="disquete" class="complemento"><label for="disquete">Disquete</label>
+                <input type="checkbox" id="cereal" class="complemento"><label for="cereal">Cereal</label>
+            </div>
+            <button class="btn-extra" onclick="addExtra('complemento')">Adicionar Complemento R$2,00</button>
+        </div>
+        <div class="section">
+            <h2>Escolha suas Caldas</h2>
+            <div class="options" id="caldas">
+                <input type="checkbox" id="chocolate" class="calda"><label for="chocolate">Chocolate</label>
+                <input type="checkbox" id="morango-c" class="calda"><label for="morango-c">Morango</label>
+                <input type="checkbox" id="kiwi-c" class="calda"><label for="kiwi-c">Kiwi</label>
+                <input type="checkbox" id="maracuja" class="calda"><label for="maracuja">Maracujá</label>
+                <input type="checkbox" id="doce-leite" class="calda"><label for="doce-leite">Doce de Leite</label>
+            </div>
+        </div>
+       
+
+        <button class="btn-confirm" id="btn-confirmar" onclick="confirmarPedido()">Confirmar Pedido </button>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
